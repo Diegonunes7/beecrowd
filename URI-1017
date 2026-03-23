@@ -1,0 +1,19 @@
+import java.io.IOException;
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+
+    private static double calculo;
+
+    public static void main(String[] args) throws IOException {
+        Locale.setDefault(Locale.US);
+        Scanner ler = new Scanner(System.in);
+        int horas = ler.nextInt();
+        int velocidade = ler.nextInt();
+
+        double calculo = horas * velocidade;
+        double gasolina = calculo / 12.0;
+        System.out.printf("%.3f%n", gasolina);
+    }
+
+}
