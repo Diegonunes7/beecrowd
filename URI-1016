@@ -1,0 +1,19 @@
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        Locale.setDefault(Locale.US);
+        Scanner ler = new Scanner(System.in);
+
+
+        int distancia = ler.nextInt();
+        int tempo = distancia * 2 ;
+        System.out.printf("%s minutos%n", tempo);
+
+        ler.close();
+
+    }
+
+}
